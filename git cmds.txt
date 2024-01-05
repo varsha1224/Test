@@ -1,0 +1,61 @@
+ddhttps://university.atlassian.com/student/catalog/list?category_ids=21734-free-training
+ls, mkdir, cd "", rm, pwd
+git init
+first make sure you’re in the main branch so use
+git pull #to get the latest changes on the repo
+git fetch --all
+git checkout main
+git checkout -b “Name-Of-Branch”
+Add your changes and then
+git status
+git clone "https://...."
+git log #complete list of 
+git log --oneline #shows one line with sha
+git log --stat #shows what was changed in the commit
+git log -p #shows actual changes in the commit, its a patch
+git show sha #use same flags as git log in the staging area before commiting
+git diff #files that have been modified, actual changes
+git tag -a version
+git add --all or git add filename #to stage the files for commiting
+git branch
+git branch "name of new branch"
+git branch -d "name os the branch to delete"
+git branch backup
+git checkout "link of jira github ticket” #for branching 
+git checkout -b
+git merge "name of the branch to merge" #make sure you are on the branch to be merged with
+git revert <sha of commit>
+git reset --soft --mixed --hard #soft keeps it in working directory, mixed is default
+git commit -m “Name of the message”
+git commit --amend
+git log --oneline --decorate
+git push origin “Name-Of-Branch”
+press q for exiting logs
+commit - takes a snapshot
+working directory - current files on my 
+staging index - stores information into your next comit
+https://www.udacity.com/course/version-control-with-git--ud123
+
+1. checkout to main
+2. git pull
+3. to make change - create a new branch
+4. do the changes on the branch
+5. git status
+6. git add . #or the file path
+7. git commit -m "   "
+8. git push origin "name of branch"
+9. git add -A #force git to take any file.
+10. after pr approved and merged, delete the local branch git branch -d "name of the branch"
+
+--to resolve conflicts
+1. update your local branch
+2. git merge with the branch name that I want to merge with
+3. solve the conflicts locally and push
+
+A - Added (This is a new file that has been added to the repository)
+M - Modified (An existing file has been changed)
+D - Deleted (a file has been deleted)
+U - Untracked (The file is new or has been changed but has not been added to the repository yet)
+C - Conflict (There is a conflict in the file)
+R - Renamed (The file has been renamed)
+S - Submodule (In repository exists another subrepository)

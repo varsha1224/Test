@@ -1,0 +1,5 @@
+git init
+git add f1.py
+git commit -m “Msg”
+git remote add origin <url>
+git push -u origin main
